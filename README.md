@@ -3,7 +3,7 @@ GPT for your wiki pages
 
 ## Contributors
 - [c0demode](https://github.com/c0demode)
-- [na]()
+- [Larry Battle](https://github.com/LarryBattle)
 - [na]()
 - [na]()
 - brayanpena530
