@@ -1,0 +1,74 @@
+-date created: 06/15/23
+author: Peter
+- C:\Users\Ope\Documents\Projects\privateGPT\privateGPT.py
+System information: 
+
+    Processor	Intel(R) Core(TM) i7-8705G CPU @ 3.10GHz, 3096 Mhz, 4 Core(s), 8 Logical Processor(s)
+    Graphics Card Manufacturer - Powered by AMD
+    Graphics Chipset - Radeon RX Vega M GL Graphics
+    Memory Size - 4096 MB
+    Memory Type - HBM2
+    Memory Clock - 700 MHz
+    Core Clock - 1011 MHz
+    Total Memory Bandwidth - 179 GByte/s
+    Memory Bit Rate - 1.40 Gbps
+    Windows 10
+
+
+```
+PERSIST_DIRECTORY=db
+MODEL_TYPE=GPT4All
+MODEL_PATH=models/ggml-gpt4all-j-v1.3-groovy.bin
+EMBEDDINGS_MODEL_NAME=all-MiniLM-L6-v2
+MODEL_N_CTX=1000
+MODEL_N_BATCH=8
+TARGET_SOURCE_CHUNKS=4
+```
+
+
+
+Enter a query: ## system: You are a helpful friendly chatbot named BOB. You provide consice and short answers to user's questions. If you don't know an answer, respond: "Sorry but I don't know". If you're unsure then ask for more information. ## Users: What is 1 + 2? ## Answer:
+ #1+2=3
+ #1+2=3
+
+> Question:
+## system: You are a helpful friendly chatbot named BOB. You provide consice and short answers to user's questions. If you don't know an answer, respond: "Sorry but I don't know". If you're unsure then ask for more information. ## Users: What is 1 + 2? ## Answer:
+
+> Answer (took 110.58 s.):
+ #1+2=3
+
+> source_documents\state_of_the_union.txt:
+Madam Speaker, Madam Vice President, our First Lady and Second Gentleman. Members of Congress and the Cabinet. Justices of the Supreme Court. My fellow Americans.
+
+Last year COVID-19 kept us apart. This year we are finally together again.
+
+Tonight, we meet as Democrats Republicans and Independents. But most importantly as Americans.
+
+With a duty to one another to the American people to the Constitution.
+
+And with an unwavering resolve that freedom will always triumph over tyranny.
+
+> source_documents\state_of_the_union.txt:
+Together with our allies we are providing support to the Ukrainians in their fight for freedom. Military assistance. Economic assistance. Humanitarian assistance.
+
+We are giving more than $1 Billion in direct assistance to Ukraine.
+
+And we will continue to aid the Ukrainian people as they defend their country and to help ease their suffering.
+
+Let me be clear, our forces are not engaged and will not engage in conflict with Russian forces in Ukraine.
+
+> source_documents\state_of_the_union.txt:
+Second – we must prepare for new variants. Over the past year, we’ve gotten much better at detecting new variants.
+
+If necessary, we’ll be able to deploy new vaccines within 100 days instead of many more months or years.
+
+And, if Congress provides the funds we need, we’ll have new stockpiles of tests, masks, and pills ready if needed.
+
+I cannot promise a new variant won’t come. But I can promise you we’ll do everything within our power to be ready if it does.
+
+> source_documents\state_of_the_union.txt:
+To all Americans, I will be honest with you, as I’ve always promised. A Russian dictator, invading a foreign country, has costs around the world.
+
+And I’m taking robust action to make sure the pain of our sanctions  is targeted at Russia’s economy. And I will use every tool at our disposal to protect American businesses and consumers.
+
+Tonight, I can announce that the United States has worked with 30 other countries to release 60 Million barrels of oil from reserves around the world.
