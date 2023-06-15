@@ -6,6 +6,8 @@ Support Email: support@connecthub.com
 
 Company URL: www.connecthub.com
 
+Parent Company: ACB Industries
+
 Slogan: "Stay Connected, Simplify Collaboration!"
 
 Product Description:
@@ -18,7 +20,8 @@ Elevator Pitch:
 Introducing ConnectHub (CH), the ultimate collaboration platform. Stay connected with your team, simplify collaboration, and achieve your goals. Seamlessly communicate through real-time messaging (RTM), streamline file sharing (FS), and manage tasks effortlessly (MT).
 
 Key Partners:
-- Integration with popular project management tools (PM)
+Q Who are your strategic partners and suppliers?
+A Integration with popular project management tools (PM)
 - Partnerships with cloud storage providers (CSP)
 
 Key Activities:

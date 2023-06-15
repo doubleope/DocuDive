@@ -6,6 +6,8 @@ Support Email: support@connectify.com
 
 Company URL: www.connectify.com
 
+Parent Company: Acme Inc.
+
 Slogan: "Seamless Connectivity for All Your Devices!"
 
 Product Description:

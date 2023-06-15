@@ -6,6 +6,8 @@ Support Email: support@insighthub.com
 
 Company URL: www.insighthub.com
 
+Parent Company: Acme Inc.
+
 Slogan: "Uncover Actionable Insights with Ease!"
 
 Product Description:

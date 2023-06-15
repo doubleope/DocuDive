@@ -6,6 +6,8 @@ Support Email: support@salesboost.com
 
 Company URL: www.salesboost.com
 
+Parent Company: Acme Inc.
+
 Slogan: "Supercharge Your Sales Performance!"
 
 Product Description:
