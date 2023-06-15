@@ -52,10 +52,5 @@ def invocations():
     resultjson = json.dumps(result, indent=4)
     return flask.Response(response=resultjson, status=200, mimetype='application/json')
 
-# Sample response to POST request
-# {
-#     "answer": " The context does not provide an answer to this question as it deals with Russia's actions, rather than a specific statement made by President Zelenskyy or any other person mentioned in the text.",
-#     "Documents": {
-#         "source_documents\\state_of_the_union.txt": "The United States is a member along with 29 other nations. \n\nIt matters. American diplomacy matters. American resolve matters. \n\nPutin’s latest attack on Ukraine was premeditated and unprovoked. \n\nHe rejected repeated efforts at diplomacy. \n\nHe thought the West and NATO wouldn’t respond. And he thought he could divide us at home. Putin was wrong. We were ready.  Here is what we did.   \n\nWe prepared extensively and carefully."
-#     }
-# }
+if __name__ == "__main__":
+    app.run(host='localhost',port=8080)

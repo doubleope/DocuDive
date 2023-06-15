@@ -6,11 +6,11 @@ def model_fn():
 def predict(body: dict, llm):
     query = body["query"]
     answer, documents = getResult(query, llm)
-    docsDictionary = []
+    result = {
+        "answer":answer,
+        "Documents":{}
+        }
     for doc in documents:
-        docsDictionary.append({doc.metadata["source"], doc.page_content})
+        result['Documents'][doc.metadata["source"]] = doc.page_content
 
-    return {
-            "answer":answer,
-            "Documents":docsDictionary
-            }
+    return result
