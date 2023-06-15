@@ -11,7 +11,3 @@ WORKDIR /app
 COPY . .
 
 RUN pip install -r requirements.txt
-
-RUN python3 ingest.py
-
-CMD ["python3", "privateGPT.py"]

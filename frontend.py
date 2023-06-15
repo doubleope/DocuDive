@@ -4,7 +4,7 @@ from DocuDive import getResult, loadModel
 llm = loadModel()
 
 with gr.Blocks() as demo:
-    gr.Markdown("## Chat with Amazon SageMaker")
+    gr.Markdown("## Chat with DocuDive")
     with gr.Column():
         chatbot = gr.Chatbot()
         with gr.Row():
