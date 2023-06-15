@@ -51,6 +51,3 @@ def invocations():
     result = predict(body, llm)
     resultjson = json.dumps(result, indent=4)
     return flask.Response(response=resultjson, status=200, mimetype='application/json')
-
-if __name__ == "__main__":
-    app.run(host='localhost',port=8080)

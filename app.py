@@ -3,6 +3,8 @@ import flask
 from flask import Flask, request
 from werkzeug.middleware.proxy_fix import ProxyFix
 import json
+import time
+from datetime import datetime
 from src.DocuDive import loadModel, getResult
 
 
@@ -48,14 +50,25 @@ def invocations():
     Function which responds to the invocations requests.
     """
     body = request.json
-    result = predict(body, llm)
-    resultjson = json.dumps(result, indent=4)
-    return flask.Response(response=resultjson, status=200, mimetype='application/json')
+    isSuccess = True
+    result = {}
+    try:
+        start = time.time()
+        result = predict(body, llm)
+        end = time.time()
+    except:
+        isSuccess = False
+    
 
-# Sample response to POST request
-# {
-#     "answer": " The context does not provide an answer to this question as it deals with Russia's actions, rather than a specific statement made by President Zelenskyy or any other person mentioned in the text.",
-#     "Documents": {
-#         "source_documents\\state_of_the_union.txt": "The United States is a member along with 29 other nations. \n\nIt matters. American diplomacy matters. American resolve matters. \n\nPutin’s latest attack on Ukraine was premeditated and unprovoked. \n\nHe rejected repeated efforts at diplomacy. \n\nHe thought the West and NATO wouldn’t respond. And he thought he could divide us at home. Putin was wrong. We were ready.  Here is what we did.   \n\nWe prepared extensively and carefully."
-#     }
-# }
+    response = {
+        "result" : result,
+        "timestamp":datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
+        "isSuccess":isSuccess,
+        "jobDurationSeconds": round(end - start, 0)
+    }
+
+    responsejson = json.dumps(response, indent=4)
+    return flask.Response(response=responsejson, status=200, mimetype='application/json')
+
+if __name__ == "__main__":
+    app.run(host='localhost',port=8080)
