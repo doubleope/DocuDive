@@ -1,5 +1,5 @@
 import gradio as gr
-from DocuDive import getResult, loadModel
+from src.DocuDive import getResult, loadModel
 
 llm = loadModel()
 
