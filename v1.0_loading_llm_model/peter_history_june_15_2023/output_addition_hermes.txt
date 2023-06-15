@@ -1,3 +1,32 @@
+-date created: 06/15/23
+author: Peter
+- C:\Users\Ope\Documents\Projects\privateGPT\privateGPT.py
+System information: 
+
+    Processor	Intel(R) Core(TM) i7-8705G CPU @ 3.10GHz, 3096 Mhz, 4 Core(s), 8 Logical Processor(s)
+    Graphics Card Manufacturer - Powered by AMD
+    Graphics Chipset - Radeon RX Vega M GL Graphics
+    Memory Size - 4096 MB
+    Memory Type - HBM2
+    Memory Clock - 700 MHz
+    Core Clock - 1011 MHz
+    Total Memory Bandwidth - 179 GByte/s
+    Memory Bit Rate - 1.40 Gbps
+    Windows 10
+
+
+```
+PERSIST_DIRECTORY=db
+MODEL_TYPE=GPT4All
+MODEL_PATH=models/ggml-v3-13b-hermes-q5_1.bin
+EMBEDDINGS_MODEL_NAME=all-MiniLM-L6-v2
+MODEL_N_CTX=1000
+MODEL_N_BATCH=8
+TARGET_SOURCE_CHUNKS=4
+```
+
+
+
 > Question:
 what is 1 + 1
 
