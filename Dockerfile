@@ -1,13 +1,23 @@
-FROM python:3.8
+FROM python:3.10.4
+
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     build-essential \
     cmake \
-    libopenblas-dev \
-    libomp-dev
+    libopenblas-dev 
+
+RUN apt-get clean
+
+ENV PYTHONUNBUFFERED=TRUE
+ENV PYTHONDONTWRITEBYTECODE=TRUE
+ENV PATH="/opt/program:${PATH}"
 
 WORKDIR /app
 
-COPY . .
+COPY requirements.txt .
 
 RUN pip install -r requirements.txt
+
+COPY . .
+
+ENTRYPOINT ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]

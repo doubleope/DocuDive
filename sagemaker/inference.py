@@ -1,6 +1,6 @@
 from src.DocuDive import loadModel, getResult
 
-def model_fn(self):
+def model_fn():
     return loadModel()
 
 def predict(body: dict, llm):
