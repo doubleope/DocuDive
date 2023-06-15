@@ -6,6 +6,8 @@ Support Email: support@taskmaster.com
 
 Company URL: www.taskmaster.com
 
+Parent Company: Acme Inc.
+
 Slogan: "Master Your Tasks with Ease!"
 
 Product Description:

@@ -6,6 +6,8 @@ Support Email: support@salespro.com
 
 Company URL: www.salespro.com
 
+Parent Company: Acme Inc.
+
 Slogan: "Boost Your Sales Success with SalesPro!"
 
 Product Description:

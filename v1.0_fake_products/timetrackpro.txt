@@ -6,6 +6,8 @@ Support Email: support@timetrackpro.com
 
 Company URL: www.timetrackpro.com
 
+Parent Company: Acme Inc.
+
 Slogan: "Effortlessly Track and Manage Your Time!"
 
 Product Description:
