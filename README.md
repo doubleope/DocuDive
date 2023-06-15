@@ -7,3 +7,4 @@ GPT for your wiki pages
 - [Bryce Duncan](https://github.com/BryceDuncan)
 - [na]()
 - brayanpena530
+- [Alexander Schulz](https://github.com/alxschlz98)
