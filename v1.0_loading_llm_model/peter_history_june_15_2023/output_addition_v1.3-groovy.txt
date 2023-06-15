@@ -1,0 +1,47 @@
+
+> Question:
+what is 1 + 1
+
+> Answer (took 85.13 s.):
+ 2
+
+> source_documents\state_of_the_union.txt:
+Up to eight state-of-the-art factories in one place. 10,000 new good-paying jobs.
+
+Some of the most sophisticated manufacturing in the world to make computer chips the size of a fingertip that power the world and our everyday lives.
+
+Smartphones. The Internet. Technology we have yet to invent.
+
+But that’s just the beginning.
+
+Intel’s CEO, Pat Gelsinger, who is here tonight, told me they are ready to increase their investment from
+$20 billion to $100 billion.
+
+> source_documents\state_of_the_union.txt:
+Please rise if you are able and show that, Yes, we the United States of America stand with the Ukrainian people.
+
+Throughout our history we’ve learned this lesson when dictators do not pay a price for their aggression they cause more chaos.
+
+They keep moving.
+
+And the costs and the threats to America and the world keep rising.
+
+That’s why the NATO Alliance was created to secure peace and stability in Europe after World War 2.
+
+> source_documents\state_of_the_union.txt:
+Imagine what it’s like to look at your child who needs insulin and have no idea how you’re going to pay for it.
+
+What it does to your dignity, your ability to look your child in the eye, to be the parent you expect to be.
+
+Joshua is here with us tonight. Yesterday was his birthday. Happy birthday, buddy.
+
+For Joshua, and for the 200,000 other young people with Type 1 diabetes, let’s cap the cost of insulin at $35 a month so everyone can afford it.
+
+> source_documents\state_of_the_union.txt:
+And we will, as one people.
+
+One America.
+
+The United States of America.
+
+May God bless you all. May God protect our troops.
