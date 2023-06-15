@@ -1,6 +1,8 @@
 # DocuDive
 GPT for your wiki pages
 
+- Based off of PrivateGPT - https://github.com/imartinez/privateGPT
+
 ## Contributors
 - [c0demode](https://github.com/c0demode)
 - [Larry Battle](https://github.com/LarryBattle)
