@@ -5,9 +5,14 @@ import Input from './components/Input'
 import Output from './components/Output'
 
 export default function App() {
-  function handleSubmit(event, userInput) {
+  function handleSubmit(event, userInput, cachedOut) {
     event.preventDefault();
-    setOutput(callLLM(userInput));
+    if (cachedOut) {
+      setOutput(cachedOut);
+      return;
+    }
+    setOutput("Loading, this may take a few minutes...");
+    callLLM(userInput).then(data => setOutput(data));
   }
 
   const [output, setOutput] = useState('');
