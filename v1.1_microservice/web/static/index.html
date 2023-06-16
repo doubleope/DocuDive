@@ -7,8 +7,23 @@
     <title>DocuDive Test</title>
 </head>
 <body>
+<div>
+
+    <fieldset>
+        <h2>Input:</h2>
+        <label for="user_query">Query: </label><textarea id="user_query"></textarea>
+        <input type="button" value="Submit Query"/>
+
+        <h2>Output:</h2>
+        <label for="query_response">Response: </label><textarea id="query_response"></textarea>
+
+    </fieldset>
+</div>
+
+<p>
 Update me.
 Look in the console
+</p>
 <script>
 console.log("start");
 function buildQuery(query){
@@ -37,6 +52,7 @@ function buildQuery(query){
     console.log({query, content});
     console.timeEnd("sending request")
 })();
+
 </script>
 </body>
 </html>
