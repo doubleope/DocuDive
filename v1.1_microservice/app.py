@@ -5,7 +5,9 @@ from werkzeug.middleware.proxy_fix import ProxyFix
 import json
 import time
 from datetime import datetime
-from src.DocuDive import loadModel, getResult
+import sys
+sys.path.append('src')
+from DocuDive import loadModel, getResult
 
 
 def model_fn():

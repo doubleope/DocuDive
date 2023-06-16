@@ -3,7 +3,11 @@ import flask
 from flask import Flask, request
 from werkzeug.middleware.proxy_fix import ProxyFix
 import json
-from src.DocuDive import loadModel, getResult
+import time
+from datetime import datetime
+import sys
+# sys.path.append('src')
+from DocuDive import loadModel, getResult
 
 
 def model_fn():
@@ -48,6 +52,22 @@ def invocations():
     Function which responds to the invocations requests.
     """
     body = request.json
-    result = predict(body, llm)
-    resultjson = json.dumps(result, indent=4)
-    return flask.Response(response=resultjson, status=200, mimetype='application/json')
+    isSuccess = True
+    result = {}
+    try:
+        start = time.time()
+        result = predict(body, llm)
+        end = time.time()
+    except:
+        isSuccess = False
+    
+
+    response = {
+        "result" : result,
+        "timestamp":datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
+        "isSuccess":isSuccess,
+        "jobDurationSeconds": round(end - start, 0)
+    }
+
+    responsejson = json.dumps(response, indent=4)
+    return flask.Response(response=responsejson, status=200, mimetype='application/json')
