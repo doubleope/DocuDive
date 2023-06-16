@@ -1,5 +1,5 @@
 export default function callLLM(prompt) {
-    const URL = "http://54.197.95.149:8080/api/ask"
+    const URL = ""
     const body = { query: prompt }
     return fetch(URL, {
         method: "POST",
