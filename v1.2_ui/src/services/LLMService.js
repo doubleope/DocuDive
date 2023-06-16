@@ -10,5 +10,5 @@ export default function callLLM(prompt) {
           },
     })
     .then((response) => response.json())
-    .then(data => { return data.result });
+    .then(data => { return data.result.answer });
 }
