@@ -51,7 +51,7 @@ def invocations():
     Function which responds to the invocations requests.
     """
     body = request.json
-    if not body.query:
+    if "query" not in body:
         return "Missing 'query' in POST JSON body"
     isSuccess = True
     result = {}
