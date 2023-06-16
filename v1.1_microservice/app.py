@@ -64,7 +64,7 @@ def invocations():
 
     response = {
         "result" : result,
-        "timestamp":datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
+        "timestamp":datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
         "isSuccess":isSuccess,
         "jobDurationSeconds": round(end - start, 0)
     }
