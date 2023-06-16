@@ -1,2 +1,8 @@
+## Load data
+> cat .env
+> python ingest.py
 
-sudo 
+## run server
+> python server.py
+> 
+> 
