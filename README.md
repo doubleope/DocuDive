@@ -89,7 +89,7 @@ Note: you could turn off your internet connection, and the script inference woul
 To launch a webservice that runs on local host port 8080, run the following command: 
 
 ```shell
-python v1.1_microservice/app.py
+python v1.1_microservice/server.py
 ```
 
 The webserver has 2 requests that you can make. One is a GET request to /ping which will return the string "pong". This will be to do any healthchecks on the service. And lastly there is a POST request to /invocations that will take in a query in the body of the response and return the response from the large language model. Here is an example of the request body:

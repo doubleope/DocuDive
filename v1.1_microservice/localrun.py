@@ -1,4 +1,4 @@
-from src.DocuDive import loadModel, getResult
+from DocuDive import loadModel, getResult
 import time
 
 llm = loadModel()
