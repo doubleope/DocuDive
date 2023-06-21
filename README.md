@@ -148,7 +148,7 @@ If so set your archflags during pip install. eg: _ARCHFLAGS="-arch x86_64" pip3 
 - [c0demode](https://github.com/c0demode)
 - [Larry Battle](https://github.com/LarryBattle)
 - [Bryce Duncan](https://github.com/BryceDuncan)
-- [na]()
+- [Opeyemi Openiyi](https://github.com/doubleope)
 - brayanpena530
 - [Alexander Schulz](https://github.com/alxschlz98)
 
