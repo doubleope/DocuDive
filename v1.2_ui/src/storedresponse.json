@@ -1,0 +1,10 @@
+[
+    {
+        "prompt": "test",
+        "result": "test result"
+    },
+    {
+        "prompt": "a different test",
+        "result": "ok cool"
+    }
+]

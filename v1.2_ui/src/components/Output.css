@@ -1,0 +1,7 @@
+.height85 {
+    min-height: 85vh
+}
+
+textarea {
+    resize: none
+}

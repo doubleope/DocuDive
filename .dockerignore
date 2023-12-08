@@ -6,3 +6,10 @@ example.env
 frontend.py 
 LICENSE
 README.md
+1.0_export_confluence_page/
+v1.0_diagrams/
+v1.0_loading_llm_model/
+v1.1/
+v1.1_microservice/
+v1.2_ui/
+v1.3_aws/

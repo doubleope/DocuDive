@@ -1,0 +1,79 @@
+-date created: 06/15/23
+author: Peter
+- C:\Users\Ope\Documents\Projects\DocuDive\src\frontend.py
+System information: 
+
+    Processor	Intel(R) Core(TM) i7-8705G CPU @ 3.10GHz, 3096 Mhz, 4 Core(s), 8 Logical Processor(s)
+    Graphics Card Manufacturer - Powered by AMD
+    Graphics Chipset - Radeon RX Vega M GL Graphics
+    Memory Size - 4096 MB
+    Memory Type - HBM2
+    Memory Clock - 700 MHz
+    Core Clock - 1011 MHz
+    Total Memory Bandwidth - 179 GByte/s
+    Memory Bit Rate - 1.40 Gbps
+    Windows 10
+
+
+```
+PERSIST_DIRECTORY=db
+MODEL_TYPE=GPT4All
+MODEL_PATH=D:\privateGPT\models\ggml-v3-13b-hermes-q5_1.bin
+EMBEDDINGS_MODEL_NAME=all-MiniLM-L6-v2
+MODEL_N_CTX=1000
+MODEL_N_BATCH=8
+TARGET_SOURCE_CHUNKS=4
+```
+
+
+
+Chat with DocuDive
+
+Chatbot
+Input: what kept us apart last year
+
+duration: 428s
+possible reason: system out of Memory
+
+
+Output:
+Last year we suffered from COVID-19 and that was what kept us all apart, whether it be staying home or social distancing measures in place.
+source_documents\state_of_the_union.txt:
+The American Rescue Plan gave schools money to hire teachers and help students make up for lost learning.
+
+I urge every parent to make sure your school does just that. And we can all play a part—sign up to be a tutor or a mentor.
+
+Children were also struggling before the pandemic. Bullying, violence, trauma, and the harms of social media.
+
+source_documents\state_of_the_union.txt:
+Through her pain she found purpose to demand we do better.
+
+Tonight, Danielle—we are.
+
+The VA is pioneering new ways of linking toxic exposures to diseases, already helping more veterans get benefits.
+
+And tonight, I’m announcing we’re expanding eligibility to veterans suffering from nine respiratory cancers.
+
+source_documents\state_of_the_union.txt:
+Third – we can end the shutdown of schools and businesses. We have the tools we need.
+
+It’s time for Americans to get back to work and fill our great downtowns again. People working from home can feel safe to begin to return to the office.
+
+We’re doing that here in the federal government. The vast majority of federal workers will once again work in person.
+
+Our schools are open. Let’s keep it that way. Our kids need to be in school.
+
+source_documents\state_of_the_union.txt:
+And unlike the $2 Trillion tax cut passed in the previous administration that benefitted the top 1% of Americans, the American Rescue Plan helped working people—and left no one behind.
+
+And it worked. It created jobs. Lots of jobs.
+
+In fact—our economy created over 6.5 Million new jobs just last year, more jobs created in one year
+than ever before in the history of America.
+
+Chat Message Box
+Submit
+Clear
+Use via API
+·
+Built with Gradiologo

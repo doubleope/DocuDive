@@ -3,6 +3,7 @@ FROM python:3.10.4
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     build-essential \
+    nginx \
     cmake \
     libopenblas-dev 
 
@@ -12,12 +13,16 @@ ENV PYTHONUNBUFFERED=TRUE
 ENV PYTHONDONTWRITEBYTECODE=TRUE
 ENV PATH="/opt/program:${PATH}"
 
-WORKDIR /app
-
 COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY . .
+COPY sagemaker /opt/program
+COPY src /opt/program
+COPY .env .
 
-ENTRYPOINT ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
+RUN chmod +x /opt/program
+
+WORKDIR /opt/program
+
+RUN python ingest.py

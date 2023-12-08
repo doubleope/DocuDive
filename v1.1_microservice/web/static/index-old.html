@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocuDive Test</title>
+</head>
+<body>
+<div>
+
+    <fieldset>
+        <h2>Input:</h2>
+        <label for="user_query">Query: </label><textarea id="user_query"></textarea>
+        <input type="button" value="Submit Query"/>
+
+        <h2>Output:</h2>
+        <label for="query_response">Response: </label><textarea id="query_response"></textarea>
+
+    </fieldset>
+</div>
+
+<p>
+Update me.
+Look in the console
+</p>
+<script>
+console.log("start");
+function buildQuery(query){
+    return [
+        "## System: You are a friendly, helpful and concise chatbot named DocuDive. You answer product questions for user in a clear short concise manner.",
+        " Do not make up answers. Say you don't know if you're unsure of the answer to the user question. Only provide answers that you've provided with. ",
+        " Your responses are less than 50 words. The year is 2023. Answer the following question.",
+        `## User: ${query}`,
+        `## Answer:`
+    ].join('. ');
+}
+(async () => {
+    const query = buildQuery("Explain the Connectify product?");
+    const rawResponse = await fetch('/api/ask', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            query
+        })
+    });
+    console.time("sending request")
+    const content = await rawResponse.json();
+    console.log({query, content});
+    console.timeEnd("sending request")
+})();
+
+</script>
+</body>
+</html>
